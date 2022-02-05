@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "18136038-9cae-4f43-86aa-d3623d4ba47d",
+		"name": "visteon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"sumitk66@chetu.com\",\r\n    \"password\": \"test@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"sumitk66@chetu.com\",\r\n    \"password\": \"test@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addNewBook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjFmZTZmY2QyMDgwOTU5YTY2YzNiZWE5IiwiaWF0IjoxNjQ0MDY2OTgwLCJleHAiOjE2NDQxNTMzODB9.FsaQurGvqOdgUukw3jLGrVSiu3GWgfHQ0EmyG9Cr25E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookId\": \"abcs12345\",\r\n    \"bookName\": \"New Book1\",\r\n    \"isbn\": \"isbn123456789\",\r\n    \"author\": \"Sumit Kumar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/addNewBook",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addNewBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBookList",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjFmZTZmY2QyMDgwOTU5YTY2YzNiZWE5IiwiaWF0IjoxNjQ0MDY2OTgwLCJleHAiOjE2NDQxNTMzODB9.FsaQurGvqOdgUukw3jLGrVSiu3GWgfHQ0EmyG9Cr25E",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/getBookList",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getBookList"
+					],
+					"query": [
+						{
+							"key": "x-access-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjFmZTZmY2QyMDgwOTU5YTY2YzNiZWE5IiwiaWF0IjoxNjQ0MDY2OTgwLCJleHAiOjE2NDQxNTMzODB9.FsaQurGvqOdgUukw3jLGrVSiu3GWgfHQ0EmyG9Cr25E",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
